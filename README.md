@@ -21,6 +21,7 @@ Le pagine associate permettono di
 Le relative servlet gestisono la creazione di:
   - una GET tramite un httpClient dell'API rest AccountBalance
   - una POST tramite un httpClient sull'API rest CreateSCTOrder
+  
 Le risposte alla chiamate dell'httpClient vengono gentite dalle servlet in modo opportuno così da restituire 
 una pagina HTML con la presentazione della risposta all'utente
 
