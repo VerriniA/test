@@ -75,14 +75,14 @@ public class EstrattoConto extends HttpServlet implements IURIFormatter
 	@Override
 	public String getURI()
 	{
-		return Const.API_ESTRATTOCONTO.replaceAll("accountId", getAccountId());
+		return Const.API_ESTRATTOCONTO.replaceAll("accountId", String.valueOf(getAccountId()));
 	}
 
 	// dato interno all'applicazione
 	@Override
-	public String getAccountId()
+	public Long getAccountId()
 	{
-		return "2";
+		return 2L;
 	}
 
 }

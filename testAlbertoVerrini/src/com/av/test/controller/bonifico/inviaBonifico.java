@@ -76,13 +76,13 @@ public class inviaBonifico extends HttpServlet implements IURIFormatter
 	@Override
 	public String getURI()
 	{
-		return Const.API_BONIFICO.replaceAll("accountId", getAccountId());
+		return Const.API_BONIFICO.replaceAll("accountId", String.valueOf(getAccountId()));
 	}
 
 	// dato interno all'applicazione
 	@Override
-	public String getAccountId()
+	public Long getAccountId()
 	{
-		return "1";
+		return 1L;
 	}
 }
