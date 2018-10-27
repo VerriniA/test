@@ -11,17 +11,22 @@ Materiale condiviso
 4. Unit test delle chiamate alle API esposte da Platfr.io tramite la classe CustomHttpClient.java
 
 APPROCCIO
+1. Ho eseguito una serie di test con postman per prendere confidenza con le API e visualizzare sia i mock di risposta OK che KO
 
-Ho realizzato una piccola webapp (java+tomcat7) con una pagina HTML di presentazione che consente la scelta di una tra due azioni:
+2. Ho preparato un paio di diagrammi UML con un test case e un class diagram
+
+3- Ho realizzato una piccola webapp (java+tomcat7) con una pagina HTML di presentazione che consente la scelta di una tra due azioni:
   - Chiedi estrattpo conto
   - Esegui bonifico
-Le pagine associate permettono di 
-  - inviare la richiesta e ricevere il saldo
-  - compilare un form, inviare la richiesta e ricevere conferma dell'operazione
-Le relative servlet gestisono la creazione di:
-  - una GET tramite un httpClient dell'API rest AccountBalance
-  - una POST tramite un httpClient sull'API rest CreateSCTOrder
+    Le pagine associate permettono di 
+      - inviare la richiesta e ricevere il saldo
+      - compilare un form, inviare la richiesta e ricevere conferma dell'operazione
+    Le relative servlet gestisono la creazione di:
+      - una GET tramite un httpClient dell'API rest AccountBalance
+      - una POST tramite un httpClient sull'API rest CreateSCTOrder
   
-Le risposte alla chiamate dell'httpClient vengono gentite dalle servlet in modo opportuno così da restituire 
-una pagina HTML con la presentazione della risposta all'utente
+    Le risposte alla chiamate dell'httpClient vengono gentite dalle servlet in modo opportuno così da restituire 
+    una pagina HTML con la presentazione della risposta all'utente
+
+4. Ho preparato una serie di unittest con Junit5 per erificare che le risposte al ClientHttp java fossero soerenti con i miei test fatti con postman
 
