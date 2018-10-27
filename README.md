@@ -4,11 +4,15 @@ Materiale condiviso
 
 1. Web application java + Tomcat 7.0
   - progetto "testAlbertoVerrini"
+  
 2. Modellazione UML di uno use case e di un class diagram dei soggetti coinvolti
   - nella cartella "testAlbertoVerrini/docs/UML"
+  
 3. Test di approccio alle API esposte da Platfr.io: una batteria di test realizzati con postamn, delle chiamate AccountBalance e CreateSCTOrder
   - nella cartella "testAlbertoVerrini/src-test/postman"
+  
 4. Unit test delle chiamate alle API esposte da Platfr.io tramite la classe CustomHttpClient.java
+  - nella cartella "testAlbertoVerrini/src-test/"
 
 APPROCCIO
 1. Ho eseguito una serie di test con postman per prendere confidenza con le API e visualizzare sia i mock di risposta OK che KO
@@ -30,5 +34,5 @@ APPROCCIO
     Le risposte alla chiamate dell'httpClient vengono gentite dalle servlet in modo opportuno così da restituire 
     una pagina HTML con la presentazione della risposta all'utente
 
-4. Ho preparato una serie di unittest con Junit5 per erificare che le risposte al ClientHttp java fossero soerenti con i miei test fatti con postman
+4. Ho preparato una serie di unittest con Junit5 per verificare che le risposte al ClientHttp java fossero coerenti con i miei test fatti con postman
 
