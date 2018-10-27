@@ -10,6 +10,8 @@ Materiale condiviso
   - nella cartella "testAlbertoVerrini/src-test/postman"
 4. Unit test delle chiamate alle API esposte da Platfr.io tramite la classe CustomHttpClient.java
 
+APPROCCIO
+
 Ho realizzato una piccola webapp (java+tomcat7) con una pagina HTML di presentazione che consente la scelta di una tra due azioni:
   - Chiedi estrattpo conto
   - Esegui bonifico
