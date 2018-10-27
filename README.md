@@ -18,9 +18,11 @@ APPROCCIO
 3- Ho realizzato una piccola webapp (java+tomcat7) con una pagina HTML di presentazione che consente la scelta di una tra due azioni:
   - Chiedi estrattpo conto
   - Esegui bonifico
+  
     Le pagine associate permettono di 
       - inviare la richiesta e ricevere il saldo
-      - compilare un form, inviare la richiesta e ricevere conferma dell'operazione
+      - compilare un form, inviare la richiesta e ricevere conferma dell'operazioneù
+      
     Le relative servlet gestisono la creazione di:
       - una GET tramite un httpClient dell'API rest AccountBalance
       - una POST tramite un httpClient sull'API rest CreateSCTOrder
