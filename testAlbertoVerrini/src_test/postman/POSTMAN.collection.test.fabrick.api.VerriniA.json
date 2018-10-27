@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "f7f693dc-c397-4f67-97ee-b668f8e4b597",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account detail OK",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Schema",
+						"value": "S2S"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.platfr.io/api/gbs/banking/v2/accounts/999999",
+					"protocol": "https",
+					"host": [
+						"api",
+						"platfr",
+						"io"
+					],
+					"path": [
+						"api",
+						"gbs",
+						"banking",
+						"v2",
+						"accounts",
+						"999999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account balance KO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.platfr.io/api/gbs/banking/v4.0/accounts/1/balance",
+					"protocol": "https",
+					"host": [
+						"api",
+						"platfr",
+						"io"
+					],
+					"path": [
+						"api",
+						"gbs",
+						"banking",
+						"v4.0",
+						"accounts",
+						"1",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Account balance OK",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Auth-Schema",
+						"value": "S2S"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.platfr.io/api/gbs/banking/v4.0/accounts/1/balance",
+					"protocol": "https",
+					"host": [
+						"api",
+						"platfr",
+						"io"
+					],
+					"path": [
+						"api",
+						"gbs",
+						"banking",
+						"v4.0",
+						"accounts",
+						"1",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SCT order create KO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "receiverName ",
+							"value": "AV",
+							"type": "text"
+						},
+						{
+							"key": "description ",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "amount",
+							"value": "999",
+							"type": "text"
+						},
+						{
+							"key": "currency ",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "executionDate",
+							"value": "2018-08-29",
+							"type": "text"
+						},
+						{
+							"key": "feeType",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.platfr.io/api/gbs/banking/v2.1/accounts/1/payments/sct/orders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"platfr",
+						"io"
+					],
+					"path": [
+						"api",
+						"gbs",
+						"banking",
+						"v2.1",
+						"accounts",
+						"1",
+						"payments",
+						"sct",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SCT order create OK",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Auth-Schema",
+						"value": "S2S"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "receiverName ",
+							"value": "av",
+							"type": "text"
+						},
+						{
+							"key": "description ",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "amount ",
+							"value": "999",
+							"type": "text"
+						},
+						{
+							"key": "currency ",
+							"value": "EUR",
+							"type": "text"
+						},
+						{
+							"key": "executionDate",
+							"value": "2018-08-29",
+							"type": "text"
+						},
+						{
+							"key": "feeType",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.platfr.io/api/gbs/banking/v2.1/accounts/1/payments/sct/orders",
+					"protocol": "https",
+					"host": [
+						"api",
+						"platfr",
+						"io"
+					],
+					"path": [
+						"api",
+						"gbs",
+						"banking",
+						"v2.1",
+						"accounts",
+						"1",
+						"payments",
+						"sct",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
