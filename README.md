@@ -2,7 +2,7 @@ Creazione di una web application per la lettura del saldo e l'invio di un bonifi
 
 Materiale condiviso
 
-1. Web application java + Tomcat 7.0
+1. Web application java + Tomcat 7.0 + Eclipse
   - progetto "testAlbertoVerrini"
   
 2. Modellazione UML di uno use case e di un class diagram dei soggetti coinvolti
@@ -14,6 +14,9 @@ Materiale condiviso
 4. Unit test delle chiamate alle API esposte da Platfr.io tramite la classe CustomHttpClient.java
   - nella cartella "testAlbertoVerrini/src-test/"
 
+5. Qualche screenshot delle varie schermate della webapp
+  - nella cartella "testAlbertoVerrini/docs/screenshots"
+  
 APPROCCIO
 1. Ho eseguito una serie di test con postman per prendere confidenza con le API e visualizzare sia i mock di risposta OK che KO
 
